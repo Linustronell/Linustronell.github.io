@@ -1,0 +1,25 @@
+.shape{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: green;
+    animation: move-shape 5s linear;
+    animation-delay: -2s;
+    animation-iteration-count: infinite ;
+    animation-name: example;
+}
+@keyframes example{
+    10%{background-color: blue; left: 200px;}
+    20%{background-color: violet; left: 400px;}
+    30%{background-color: red; left: 600px;}
+    40%{background-color: yellow; left: 800px;}
+    50%{background-color: brown; left: 1000px;}
+
+    100%{background-color: rgb(255, 255, 255); right: 0px;}
+    90%{background-color: blue; right: 200px;}
+    80%{background-color: violet; right: 400px;}
+    70%{background-color: red; right: 600px;}
+    60%{background-color: yellow; right: 800px;}
+}
